@@ -10,7 +10,7 @@ const connectDb = require('./utils/db');
 const  bookRouter  = require('./router/bookmarkRouter');
 
 app.use(cors({
-  origin: true,// your frontend
+  origin: 'https://devlink-client-9mgp.onrender.com',// your frontend
   methods: ["GET", "POST","PUT", "DELETE"], // allowed methods
   credentials: true // if sending cookies
 }));
