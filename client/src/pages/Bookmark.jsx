@@ -4,12 +4,13 @@ import {Trash, Pencil, CirclePlus} from 'lucide-react';
 import UpdatePopup from '../components/UpdatePopup';
 import {easeInOut, motion} from 'motion/react';
 import CreatePopup from '../components/CreatePopup';
-// import { useUser } from '../context/context';
+import { useUrl } from '../context/context';
+// import { useUrl } from '../context/context';
 
 
 const Bookmark = () => {
 
-    // const {url } = useUser();
+    const {urlBack} = useUrl();
 
     const [bookmarks, setBookmarks] = useState([]);
 
@@ -31,7 +32,7 @@ const Bookmark = () => {
         navigate('/');
     }
 
-    const deleteEndpoint = "http://localhost:3000/api/deleteBookmark/";
+    const deleteEndpoint = `${urlBack}/api/deleteBookmark/`;
 
     const handleDelete = async(bookmarkId)=>{
 
@@ -57,7 +58,7 @@ const Bookmark = () => {
 
 
     useEffect(()=>{
-        const fetchEndpoint = "http://localhost:3000/api/getBookmark";
+        const fetchEndpoint = `${urlBack}/api/getBookmark`;
 
         const fetchBookmarks = async ()=>{
             const token = localStorage.getItem("token");

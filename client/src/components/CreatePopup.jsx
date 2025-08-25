@@ -6,9 +6,12 @@ import React, { useContext } from 'react'
 import { useState ,useEffect} from 'react';
 
 import { motion } from 'motion/react';
+import { useUrl } from '../context/context';
 
 
 const CreatePopup = ({setShowCreate, setBookmarks, setRefresh}) => {
+
+    const {urlBack} = useUrl();
 
     const [bookmarkData,setBookmarkData] = useState({
             title:"",
@@ -28,7 +31,7 @@ const CreatePopup = ({setShowCreate, setBookmarks, setRefresh}) => {
         const token = localStorage.getItem("token");
 
         try {
-            const createBookmarkEndpoint ="http://localhost:3000/api/createBookmark";
+            const createBookmarkEndpoint =`${urlBack}/api/createBookmark`;
 
             const res = await fetch(createBookmarkEndpoint, {
                 method:"POST",

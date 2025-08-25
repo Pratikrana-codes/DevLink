@@ -1,8 +1,12 @@
 
 
 import React, { useEffect, useState } from 'react'
+import { useUrl } from '../context/context';
 
 const UpdatePopup = ({setShowUpdate,existingData, setBookmarks, bookmarks}) => {
+
+
+    const {urlBack} = useUrl();
 
     const [formData, setFormData] = useState({
         title: existingData?.title || "",
@@ -19,7 +23,7 @@ const UpdatePopup = ({setShowUpdate,existingData, setBookmarks, bookmarks}) => {
         e.preventDefault();
 
         try {
-            let updateEndpoint = "http://localhost:3000/api/updateBookmark/";
+            let updateEndpoint = `${urlBack}/api/updateBookmark/`;
 
             const token = localStorage.getItem("token");
 

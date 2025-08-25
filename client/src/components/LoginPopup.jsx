@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom';
 
 import {motion} from 'motion/react';
+import { useUrl } from '../context/context';
 
 const LoginPopup = ({setShowLogin}) => {
+
+
+    const {urlBack} = useUrl();
 
 
     const navigate = useNavigate();
@@ -23,8 +27,8 @@ const LoginPopup = ({setShowLogin}) => {
     const handleSubmit = async(e) =>{
 
         const endpoint = currState ==="Sign Up"
-            ? "http://localhost:3000/api/auth/register"
-            : "http://localhost:3000/api/auth/login";
+            ?  `${urlBack}/api/auth/register`
+            : `${urlBack}/api/auth/login`;
 
         const payload = currState ==="Sign Up"
             ? data

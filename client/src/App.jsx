@@ -4,6 +4,7 @@ import {BrowserRouter,Routes, Route} from 'react-router-dom';
 import LoginPopup from './components/LoginPopup';
 import ProtectedRoute from './utils/ProtectedRoute';
 import Bookmark from './pages/Bookmark';
+import { UserProvider } from './context/context';
 
 const App = () => {
 
@@ -11,6 +12,7 @@ const App = () => {
 
   return (
     <div className=''>
+      <UserProvider>
         <BrowserRouter>
           {showLogin ? <LoginPopup setShowLogin={setShowLogin}/> : <></>}
         <Routes>
@@ -24,6 +26,7 @@ const App = () => {
                 }/>
         </Routes>
       </BrowserRouter>
+      </UserProvider>
     </div>
   )
 }
