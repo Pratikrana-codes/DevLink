@@ -5,7 +5,7 @@ import LoginPopup from './components/LoginPopup';
 import Bookmark from './pages/Bookmark';
 import Home from './pages/Home';
 import ProtectedRoute from './utils/ProtectedRoute';
-import { UserProvider } from './Context/Context';
+import { UserProvider } from './Context/Context.jsx';
 
 const App = () => {
 
