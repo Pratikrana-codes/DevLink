@@ -4,7 +4,7 @@ import {BrowserRouter,Routes, Route} from 'react-router-dom';
 import LoginPopup from './components/LoginPopup';
 import ProtectedRoute from './utils/ProtectedRoute';
 import Bookmark from './pages/Bookmark';
-import { UserProvider } from './context/context';
+import { UserProvider } from '../context/Context';
 
 const App = () => {
 
