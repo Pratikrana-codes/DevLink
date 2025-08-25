@@ -5,7 +5,7 @@
 import { useState } from 'react';
 
 import { motion } from 'motion/react';
-import { useUrl } from '../Context/context';
+import { useUrl } from '../Context/Context';
 
 
 const CreatePopup = ({setShowCreate, setBookmarks, setRefresh}) => {

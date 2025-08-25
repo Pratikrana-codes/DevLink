@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import { motion } from 'motion/react';
-import { useUrl } from '../Context/context';
+import { useUrl } from '../Context/Context';
 
 const LoginPopup = ({setShowLogin}) => {
 
