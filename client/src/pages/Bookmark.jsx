@@ -92,11 +92,11 @@ return (
                             <div className="w-[10px] h-[10px] bg-black rounded-full"></div>
                             <div className="w-[10px] h-[10px] bg-black rounded-full"></div>
                         </div>
-                        <h2 className='font-semibold text-3xl '>Dev<span className='text-sky-300 text-shadow-[12px_12px_12px_32px_rgba(20,255,255,0.7)]'>Link</span></h2>
+                        <h2 className='font-semibold text-2xl md:text-3xl '>Dev<span className='text-sky-300 text-shadow-[12px_12px_12px_32px_rgba(20,255,255,0.7)]'>Link</span></h2>
                     </div>
 
                     <div className="flex gap-3">
-                        <button onClick={()=> logout()} className='bg-red-400 hover:shadow-[12px_12px_24px_rgba(255,50,0,0.5)] hover:scale-105 text-white px-2 py-2 rounded-md  cursor-pointer shadow-[12px_12px_24px_rgba(0,0,0,0.5)]'>Logout</button>
+                        <button onClick={()=> logout()} className='bg-red-400 hover:shadow-[12px_12px_24px_rgba(255,50,0,0.5)] hover:scale-105 text-white  px-1 py-1 md:px-2 md:py-1 rounded-md  cursor-pointer shadow-[12px_12px_24px_rgba(0,0,0,0.5)]'>Logout</button>
                         {/* <button className='bg-gray-100 px-2 py-2 rounded-md cursor-pointer shadow-2xs'>Light</button> */}
                     </div>
                 </div>
