@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
-import {Trash, Pencil, CirclePlus} from 'lucide-react';
-import UpdatePopup from '../components/UpdatePopup';
-import {easeInOut, motion} from 'motion/react';
+import { CirclePlus, Pencil, Trash } from 'lucide-react';
+import { motion } from 'motion/react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import CreatePopup from '../components/CreatePopup';
-import { useUrl } from '../context/context';
+import UpdatePopup from '../components/UpdatePopup';
+import { useUrl } from '../Context/context';
 // import { useUrl } from '../context/context';
 
 

@@ -1,12 +1,11 @@
 
 
 
-import React, { useContext } from 'react'
 
-import { useState ,useEffect} from 'react';
+import { useState } from 'react';
 
 import { motion } from 'motion/react';
-import { useUrl } from '../context/context';
+import { useUrl } from '../Context/context';
 
 
 const CreatePopup = ({setShowCreate, setBookmarks, setRefresh}) => {

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import {useNavigate} from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import {motion} from 'motion/react';
-import { useUrl } from '../context/context';
+import { motion } from 'motion/react';
+import { useUrl } from '../Context/context';
 
 const LoginPopup = ({setShowLogin}) => {
 

@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import Home from './pages/Home'
-import {BrowserRouter,Routes, Route} from 'react-router-dom';
+import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginPopup from './components/LoginPopup';
-import ProtectedRoute from './utils/ProtectedRoute';
+import { UserProvider } from './src/Context/Context.jsx';
 import Bookmark from './pages/Bookmark';
-import { UserProvider } from "./src/context/Context";
+import Home from './pages/Home';
+import ProtectedRoute from './utils/ProtectedRoute';
 
 const App = () => {
 

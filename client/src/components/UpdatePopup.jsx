@@ -1,7 +1,7 @@
 
 
-import React, { useEffect, useState } from 'react'
-import { useUrl } from '../context/context';
+import { useState } from 'react';
+import { useUrl } from '../Context/context';
 
 const UpdatePopup = ({setShowUpdate,existingData, setBookmarks, bookmarks}) => {
 
