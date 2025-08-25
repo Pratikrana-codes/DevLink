@@ -33,11 +33,7 @@ return (
                     </div>
                     
                     <div className="flex gap-3">
-                        <motion.a
-                            whileHover={{scale:1.10}}
-                            whileTap={{scale:0.8}}
-                            href='https://github.com/Pratikrana-codes/DevLink' target="_blank" rel="noopener noreferrer" className='text-white px-1 py-1 md:px-2 md:py-1 rounded-md cursor-pointer bg-gradient-to-b from-neutral-900 to-neutral-600'>Github</motion.a>
-                        {/* <button className='bg-gray-100 px-2 py-2 rounded-md cursor-pointer shadow-2xs'>Light</button> */}
+                        <a href="https://github.com/Pratikrana-codes/DevLink" target="_blank" rel="noopener noreferrer" className='text-white px-1 py-1 md:px-2 md:py-1 rounded-md cursor-pointer bg-gradient-to-b from-neutral-900 to-neutral-600'>Github</a>
                     </div>
                 </div>
             </nav>
