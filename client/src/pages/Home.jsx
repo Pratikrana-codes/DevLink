@@ -26,10 +26,10 @@ return (
                     </div>
 
                     <div className="hidden md:flex gap-10">
-                        <a className='text-[17px] ' href="#features">Features</a>
-                        <a className='text-[17px] ' href="#testimonials">Testimonials</a>
-                        <a className='text-[17px] ' href="">Resources</a>
-                        <a className='text-[17px] ' href="">Pricing</a>
+                        <a className='text-[17px] hover:border-b-[1px]' href="#features">Features</a>
+                        <a className='text-[17px] hover:border-b-[1px]' href="#testimonials">Testimonials</a>
+                        <a className='text-[17px] hover:border-b-[1px]' href="">Resources</a>
+                        <a className='text-[17px] hover:border-b-[1px]' href="">Pricing</a>
                     </div>
                     
                     <div className="flex gap-3">
