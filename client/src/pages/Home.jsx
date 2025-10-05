@@ -10,11 +10,11 @@ const Home = ({setShowLogin}) => {
 
 
 return (
-    <div className='w-full max-w-6xl mx-auto p-5'>
+    <div className='w-full '>
         {/* // Section 1 Navbar */}
-        <section>
-            <nav className='p-3 md:p-5'>
-                <div className="flex justify-between items-center">
+        
+            <nav className='flex justify-between items-center px-4 sm:px-12 lg:px-25 xl:px-40 sticky top-0 z-20 backdrop-blur-xl font-medium dark:bg-gray-900/90 h-20'>
+                
                     <div className="flex items-center justify-center gap-2">
                         <div className="grid grid-cols-2 gap-1 items-center">
                             <div className="w-[8px] md:w-[10px] h-[8px] md:h-[10px] bg-sky-300 rounded-full"></div>
@@ -35,9 +35,8 @@ return (
                     <div className="flex gap-3">
                         <a href="https://github.com/Pratikrana-codes/DevLink" target="_blank" rel="noopener noreferrer" className='text-white px-1 py-1 md:px-2 md:py-1 rounded-md cursor-pointer bg-gradient-to-b from-neutral-900 to-neutral-600'>Github</a>
                     </div>
-                </div>
+
             </nav>
-        </section>
         {/* Section 2 header */}
 
         <section >
