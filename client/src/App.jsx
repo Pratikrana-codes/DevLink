@@ -6,6 +6,7 @@ import { UserProvider } from './ContextApi/Context.jsx';
 import Bookmark from './pages/Bookmark';
 import Home from './pages/Home';
 import ProtectedRoute from './utils/ProtectedRoute';
+import NotFound from './components/NotFound.jsx';
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
                     <Bookmark/>
                   </ProtectedRoute>
                 }/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
       </UserProvider>
