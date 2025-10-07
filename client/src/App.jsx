@@ -12,13 +12,15 @@ const App = () => {
 
   const [showLogin , setShowLogin] = useState(false);
 
+  const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme'): 'light');
+
   return (
     <div className=''>
       <UserProvider>
         <BrowserRouter>
           {showLogin ? <LoginPopup setShowLogin={setShowLogin}/> : <></>}
         <Routes>
-          <Route path='/' element={<Home setShowLogin={setShowLogin}/>}/>
+          <Route path='/' element={<Home theme={theme} setTheme={setTheme} setShowLogin={setShowLogin}/>}/>
           <Route 
                 path='/bookmark'
                 element={
