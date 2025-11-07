@@ -147,7 +147,11 @@ return (
                     ))}
                 </div>
             ):<>
-                <p>No bookmarks found</p>
+                <div className="flex w-full h-full justify-center items-center">
+                        <div className="w-8 h-8 bg-blue-500 border-dashed rounded-full animate-spin"></div>
+                        <div className="w-8 h-8 bg-red-500  border-dashed rounded-full animate-spin"></div>
+                        <div className="w-8 h-8 bg-green-500  border-dashed rounded-full animate-spin"></div>
+                </div>
             </>}
             </div>
 
