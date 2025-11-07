@@ -147,7 +147,7 @@ return (
                     ))}
                 </div>
             ):<>
-                <div className="flex w-full min-h-screen justify-center items-center gap-2">
+                <div className="flex w-full justify-center items-center gap-2">
                     <div className="w-8 h-8 bg-blue-500 border-dashed rounded-full animate-spin"></div>
                     <div className="w-8 h-8 bg-red-500  border-dashed rounded-full animate-spin"></div>
                     <div className="w-8 h-8 bg-green-500  border-dashed rounded-full animate-spin"></div>
